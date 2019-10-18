@@ -1,0 +1,1090 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.links
+{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+/* Login form style------------------------------------------------------------*/
+
+input[type=email]
+{
+    width: 270px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px #fff solid;
+    font-size: 16px;
+    padding: 15px 20px;
+    outline: none;
+    color: #fff;
+    margin-left: 30px;
+  
+}
+input[type=password]
+{
+    width: 270px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px #fff solid;
+    font-size: 16px;
+    padding: 15px 20px;
+    outline: none;
+    color: #fff;
+    margin-left: 30px;
+  
+}
+input[type=submit]
+{
+    border: none;
+    width: 150px;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 6px 0;
+    margin-left: 90px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  
+}
+input[type=submit]:hover
+{
+  color: #fff;
+  background-color: black;  
+  
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.line
+{
+    align-items: center;
+    border-left: 0.5px solid white;
+    margin-left: 0px;
+    opacity: 0.6;
+    border-collapse: collapse;
+    
+}
+
+
+/* Extra styles for the cancel button */
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+  background: rgba(44,62,80,0.9);
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left:50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+  padding-top: 40px;
+  
+}
+.loginname
+{
+    padding: 20px;
+    color: yellow;
+    font-weight: 300;
+}
+.passwordreset 
+{
+    color: yellow;
+    text-decoration: none;
+    margin-left: 20px;
+    
+    
+}
+.passwordreset2
+{
+   
+    margin-left: 25px;   
+}
+
+.passwordreset:hover
+{
+    color: rgb(89, 199, 243);
+    text-decoration: none;
+    
+    
+}
+.signup
+{
+    color: #fff;
+    margin-left: 10px;
+}
+.angersignup
+{
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 60%; 
+  background: rgba(44,62,80,0.7);
+  
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: -20px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.5s;
+  animation: animatezoom 0.5s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* Login form style------------------------------------------------------------*/
+header
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    align-content: flex-start;
+    padding: 30px 10px;
+    background:rgb(246, 129,90);
+    
+    width: 100%;
+    height: 70px;
+   
+    
+   
+}
+.links
+{
+  background-color: lightgreen;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-left: 10px;
+  border-radius: 20px;
+
+}
+.nav_links
+{
+    list-style: none;
+    
+}
+.nav_links a
+{
+    margin-right: 30px;
+}
+.nav_links li a
+{
+    text-decoration: none;
+}
+.links:active
+{
+    color: black;
+    box-shadow: 0px 2px 2px 2px lightgreen;
+
+}
+.links 
+{
+    color: black;
+    font-weight: bold;
+
+}
+
+.logoimage
+{
+ cursor: pointer;
+ width: 250px;
+}
+.searchcontainer
+{
+  background: url(/Homepage/headerback1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+.iconcontainer
+{
+    background: #fff ;
+    height: 80px;
+    width: 50%;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 20%;
+    left: 50%;
+    box-shadow: 0px 3px 4px 3px grey;
+    
+}
+.icon-bars
+{
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list-icon
+{
+    list-style-type: none;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.angerinlist
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000; 
+}
+.angerinlist img
+{
+    width: 40px;
+    height: 40px;
+    padding: 0;  
+}
+
+
+.card {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+
+}
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+
+}
+.card:active .img-top {
+
+    display: inline;
+    color: #7bbecc;
+
+}
+.iconpara
+{
+
+ font-size: 18px;
+ cursor: pointer;
+}
+.iconpara:active
+{
+ color: #7bbecc;
+
+}
+.verticalline
+{
+    border-left: 0.1px  solid;
+    height:50px;
+}
+.flightfram
+{
+    background: #fff;
+    width: 90%;
+    height: 340px;
+    margin-top: 150px;
+    margin-left: 5%;
+    border-radius: 15px;
+    
+   
+}
+#busframe
+{
+    visibility: hidden;
+}
+#busframe:active
+{
+    visibility: visible;
+}
+.offers
+{
+    background: rgb(231, 230, 230);
+    widows: 100%;
+    height: 500px;
+}
+.offertitle
+{
+    background: #fff;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    border-radius: 15px;
+    position: relative;
+    
+}
+.superoffer
+{
+    padding: 20px 0 5px 30px;
+    color:rgb(70, 69, 69);
+    font-size: 40px;
+}
+
+
+
+.landingCardSlider .slideItem .itemCard {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 6px 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.2);
+    background-color: #fff;
+    margin: 5px 10px 5px 2px;
+    padding: 0 15px 15px;
+}
+/*Cards post wrapper-----------------------------------*/
+.travel-blogs
+{
+    color: rgb(53, 52, 52);
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
+}
+.blogs-main
+{
+    background: #fff;
+    height: auto;
+     overflow-x: scroll;
+     overflow-y: hidden;
+    white-space: nowrap;
+    
+    -webkit-overflow-scrolling: touch;
+}
+.blogs-main::-webkit-scrollbar
+{
+  display: none;
+}
+/* Float four columns side by side */
+
+.card-main {
+  
+    width: 27%;
+    padding: 20px 30px;
+    height: auto;
+    display: inline-block;
+    margin: 20px;
+    margin-top: 65px;
+    
+
+  }
+  .card-image
+  {
+     width: 320px;
+      height: 190px;
+      background-size: cover;
+  }
+  .column:first-child
+  {
+      margin-left: 20px;
+  }
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card-main {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+/*FLIGHT list------------------------------------------------------------*/
+.searchcontainer
+{
+
+}
+.imgmanipulate
+{
+ width: 40px;
+ height: 40px;
+}
+.imgbutton
+{
+  width: 40px;
+  height: 40px;
+}
+.flightlist
+{
+  background: #fff;
+  width: 700px;
+  height: 500px;
+  margin-top: 20px;
+}
+.containerul
+{
+ list-style: none;
+ display: inline-block;
+ background: #fff;
+ justify-content: space-between;
+ top: 18%;
+ left: 50%;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ border-radius: 15px;
+
+}
+.mainlist1 
+{
+  float: left;
+  padding:30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center; 
+  color : rgb(66, 63, 63);
+  overflow: hidden;
+}
+.underlistfligh
+{
+  background: #4CAF50;
+  width: 700px;;
+  height: 90px;
+}
+
+.underlist {
+  float: left;
+}
+
+.underlist a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.underlist a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.underlist.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  float: left;
+  min-width: 1150px;
+  margin-top: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content  {
+  color: rgb(87, 84, 84);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: none;
+  text-align: left;
+  width: 80%;
+  height: 350px;
+  margin-left: -400px;  
+  
+}
+.searchbutton
+{
+  width: 180px;
+  border-radius: 30px;
+  margin-top: 125px;
+  margin-left: 455px;
+  background: #78b9fa;
+  font-size: 16px;
+  font-weight: bold;
+}
+.searchbutton:hover
+{
+ background: #00080f
+}
+.dropdown-content2
+{
+  margin-left: -500px;
+}
+.dropdown-content3
+{
+  margin-left: -600px;
+}
+.dropdown-content4
+{
+  margin-left: -700px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.mainlist1:hover .dropdown-content{
+  display: block;
+}
+.mainlist .dropdown-content{
+  display: block;
+}
+.ancharsearch
+{
+  text-decoration: none;
+  
+}
+.paragraph
+{
+  
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(37, 37, 37);
+   
+}
+.formclass
+{
+ background: #fff;
+ height: 150px;
+ box-shadow: 1px 1px 1px 2px  rgb(177, 175, 175);
+ border-radius: 10px;
+}
+.para101
+{
+  color: rgb(71, 71, 71);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0;
+  
+}
+.inputtype
+{
+  border: 1px solid #6eb3f7;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #00080f;
+  font-size: 16px;
+}
+.maintripway
+{
+ padding-bottom: 10px; 
+}
+.tripway
+{
+  
+  margin: 10px;
+}
+.tripelement
+{
+ color: rgb(82, 80, 80) ;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: 650 ;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  
+}
+.arrow {
+  border: solid rgb(41, 149, 236);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.tablerow1
+{
+  padding-top:-10px ;
+  
+}
+.datee
+{
+  width: 200px;
+  border-top: none;
+  border-bottom: #000 3px;
+  border: 3px;
+}
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button { 
+  display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #2c3e50;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 22px;
+  border:1px solid #ecf0f1;
+  background:#ecf0f1;
+  padding:5px;
+  width: 200px;
+  height: 40px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+input[type="date"], focus {
+  color: #077ff8;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+.paraspecial1
+{
+ padding-left: 25px;
+
+}
+.paraspecial2
+{
+ padding-left: 0px;
+ 
+}
+.paraspecial3
+{
+  padding-left: 100px;
+}
+.paraspecial4
+{
+ padding-left: 80px;
+ padding-top: 10px;
+}
+.tablefinal
+{
+  
+}
+.tablerow1
+{
+  margin-left: 20px;;
+}
+.tablerow2
+{
+  padding-left: 120px;
+}
+.tablerow3
+{
+  padding-left: 20px;
+}
+.tableinput3
+{
+  margin-left: 80px;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+.tableinput4
+{
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.tablerow4
+{
+ 
+}
+.tableinput1
+{
+  padding-left: 20px;
+}
+.tableinput3
+{
+ margin-left: 250px;
+ margin-top: 25px;
+}
+
+/*FLIGHT list------------------------------------------------------------*/
+
+/*FLIGHT list------------------------------------------------------------*/
+.offercarousel
+{
+  width: 100%;
+  height: 600px;
+  background:rgb(160, 245, 245);
+}
+.mySlides {
+  display:none;
+  height: 480px;
+  min-width: 1300px;;
+  
+}
+.content5{
+  width:1200px;
+  margin-left: 60px;
+  padding-top: 40px;
+}
+.left, .right, .badge {cursor:pointer}
+badge {height:13px;width:13px;padding:0}
+.left
+{
+  margin-left: 520px;
+  margin-top: 25px;
+}
+.right
+{
+ margin-top: -22px;
+  margin-left: 750px;
+}
+
+
+/*FLIGHT list------------------------------------------------------------*/
+
+/*FAQ section--------------------------------------------------------------------*/
+.faqsection
+{
+  width: 100%;
+  height: 800px;
+  background:rgb(160, 245, 245);
+}
+
+.faqhead
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 50px;
+  padding-top: 30px;
+}
+.faqtable
+{
+  margin-left: 55px;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+.faqdata1
+{
+  padding-right: 70 px;
+}
+.faqdata2
+{
+  
+}
+.faqdata3
+{
+  
+}
+.faqdata4
+{
+  
+}
+.faqrow1
+{
+ margin-top: 20px;
+}
+.faqrow2 p
+{
+  margin-top: 50px;
+}
+.faqhead
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.faqpara
+{
+  font-family: 'Times New Roman', Times, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  width: 550px;
+  
+}
+.hr1{
+  border-top: 2px solid rgb(56, 56, 54);
+  width: 1120px;
+  margin-left: 150px;
+  margin-top: 0px;
+  
+}
+.hr2{
+  border-top: 2px solid rgb(56, 56, 54);
+  width: 1120px;
+  margin-left: 150px;
+  margin-top: 35px;
+  
+}
+.hr3{
+  border-top: 2px solid rgb(56, 56, 54);
+  width: 1120px;
+  margin-left: 150px;
+  margin-top: -5px;
+   
+  
+}
+
+/*END FAQ section--------------------------------------------------------------------*/
+/* Style inputs */
+
+/* Style inputs */
+.namefback {
+  
+  padding: 12px;
+  border: 1.5px solid rgb(116, 114, 114);
+  margin-top: 15px;
+  margin-bottom: 20px;
+  resize: vertical;
+  margin-left: 30px;
+  border-top:none;
+  border-left: none;
+  border-right: none;
+  background: #fcfdfd;
+  width: 272px;
+  text-align: center;
+  color: rgb(39, 38, 38);
+
+}
+.emailfback{  
+  padding: 12px 40px;
+  border: 1px solid rgb(116, 114, 114);
+  margin-top: 15px;
+  margin-bottom: 20px;
+  resize: vertical;
+  margin-left: 0px;
+  
+}
+#lname
+{
+  border: 1px solid rgb(116, 114, 114);
+  border-top: none;
+  border-left: none;  
+  border-right: none;
+  color: rgb(39, 38, 38);
+}
+
+input[type=submit] {
+  background-color: rgb(48, 46, 46);
+  color:#f3efef;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+textarea
+{
+  width: 350px; 
+  margin-top: 15px;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-left: 25px;
+  background: #fcfdfd;
+  border: rgb(116, 114, 114) solid 1.5px;
+}
+
+input[type=submit]:hover {
+  background-color: #051825 ;
+  color: #fff;
+}
+
+
+
+/* Create two columns that float next to eachother */
+.maincolumn {
+  width: 100%;
+  height: 550px;
+  background: rgb(160, 245, 245);
+ 
+}
+.subcolumn
+{
+  float: left;
+  margin-top: -80px;
+  padding: 20px;
+  margin-left: 31%;
+  
+  background: #fcfdfd;
+  border-radius: 10px; 
+  width: 450px;
+  box-shadow: 2px 2px 5px 5px  rgb(106, 174, 230);
+}
+.feedbackname
+{
+  text-align: center;
+  padding-bottom: 20px;
+  color: #c53e3e;
+}
+.feedbackstyle
+{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(19, 18, 18);
+}
+/*FOOTER main-----------------------------------------------------------------------------*/
+.footermain
+{
+  width: 100%;
+  min-height: 300px;
+  background-color: rgb(102, 102, 102);
+}
+.footersub
+{
+  display: flex;
+  
+}
+.footericon
+{
+  width: 290ppx;
+  height: 60px;
+
+}
+.logofooter
+{
+  padding: 50px;
+}
+.contentfooter1
+{
+  margin-top: 50px;
+  margin-left: 140px;
+
+}
+.contentfooterlist
+{
+  display: inline;
+  list-style-type: none;
+  position: absolute;
+}
+
+.anchorfooter
+{
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 18px; 
+  color: rgb(252, 250, 250);
+  
+}
+.anchorfooter:hover
+{
+  color: rgb(32, 32, 32);
+  background: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+.contentfooter2
+{
+  margin-left: 340px;
+  margin-top: 50px;
+}
+.anchorfooterlist
+{
+  padding: 8px 0px;
+}
+.footerimage
+{
+  width: 60px;
+}
+.ancharfooterimage
+{
+  padding: 0px 7px;
+}
+.footerimgdiv
+{
+  margin-left: 525px;
+  margin-top: 30px;
+}
+
+
+/*END FOOTER main-----------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+

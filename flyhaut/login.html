@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login1.css">
+</head>
+<body>
+    <div class="login_user">
+        
+        <h2 style="color: white;">Log In</h2>
+        <form action="#">
+            <p>Username</p>
+            <input type="email" placeholder="Username/E-mail"  required>
+            <p>Password</p>
+            <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <a href="#"><input type="submit" value="Login" style="padding: 10px 20px;margin-top: 10px; color: black; border-radius: 15px;"></a>
+            <br><br>
+            <div id="container">
+                <a href="#" style="margin-top: 0px;font-size:13px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Reset Password</a><span class="line"></span>
+                <a href="#" style="margin-top: 0px;font-size:13px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Forgot Password</a>                
+            </div>
+            <br><br><br><br>
+            Don't have account?<a href="signup.html">&nbsp;Sign Up</a>
+        </form>
+        
+    </div>
+</body>
+</html>
